@@ -47,11 +47,11 @@ luego seguir con la instalacion del mismo.
 # Comandos usados en la consola de VS CODE para hacer funcionar el proyecto
 python -m venv virtual (creamos el entorno virtual)
 
-.\virtual3\Scripts\activate (activación del entorno virtual)
+.\virtual4\Scripts\activate (activación del entorno virtual)
 
-django-admin startproject MiProyectito (crea el proyecto)
+django-admin startproject Proyecto (crea el proyecto)
 
-cd .\MiProyectito\   (nos posiciona en la carpeta del proyecto)
+cd .\Proyecto\   (nos posiciona en la carpeta del proyecto)
 
 python manage.py startapp MiApp (crea la app)
 
@@ -63,7 +63,7 @@ python manage.py runserver (activa el sitio web en localhost)
 
 # Gestionando mi app
 
-python manage.py startapp App1
+python manage.py startapp 
 
 Creamos nuestro modelo dentro de models.py
 
