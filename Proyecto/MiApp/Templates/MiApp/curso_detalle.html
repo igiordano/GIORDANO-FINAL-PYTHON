@@ -1,0 +1,15 @@
+{% extends 'MiApp/index.html' %}
+{% load static %}
+
+{% block codigoDinamico %}
+
+{{curso.nombre}}
+{{curso.comision}}
+
+
+
+<button>
+    <a href="{% url 'List' %}">Regresar</a>
+</button>
+
+{% endblock  %}

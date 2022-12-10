@@ -1,0 +1,11 @@
+{% extends 'MiApp/index.html' %}
+
+{% load static %}
+    
+{% block codigoDinamico %}
+    <h1>Nuestros Cursos:</h1>
+    {% for curso in curso %}
+        <p>{{curso.nombre}}, Cursada {{curso.comision}}</p>
+    {% endfor %}
+    
+    {% endblock  %}

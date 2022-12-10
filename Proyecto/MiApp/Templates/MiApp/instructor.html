@@ -1,0 +1,11 @@
+{% extends 'MiApp/index.html' %}
+
+{% load static %}
+    
+{% block codigoDinamico %}
+    <h1>Nuestros instructores:</h1>
+    {% for instructor in instructor %}
+        <p>Nombre {{instructor.nombre}}, Apellido {{instructor.apellido}}, Email {{instructor.email}}, Profesion {{instructor.profesion}} </p>
+    {% endfor %}
+    
+    {% endblock  %}

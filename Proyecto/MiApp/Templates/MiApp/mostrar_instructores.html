@@ -1,0 +1,22 @@
+{% extends 'MiApp/index.html' %}
+
+{% load static %}
+    
+{% block codigoDinamico %}
+<h1>Nuestros instructores:</h1>
+{% for instructor in instructores %}
+    <p> 
+        id: {{instructor.id}}
+        Nombre: {{instructor.nombre}}, Apellido: {{instructor.apellido}},
+        Email: {{instructor.email}}, Profesion: {{instructor.profesion}}
+    </p>
+    <button>
+        <a href="{% url 'Eliminar instructor' instructor_id=instructor.id %}">Eliminar</a>
+    </button> 
+
+    <button>
+        <a href="{% url 'actualizar instructor' instructor_id=instructor.id %}">Actualizar</a>
+    </button> 
+{% endfor %}
+
+{% endblock  %}

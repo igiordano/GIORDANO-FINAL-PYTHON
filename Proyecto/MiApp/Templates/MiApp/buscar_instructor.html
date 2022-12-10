@@ -1,0 +1,27 @@
+{% extends 'MiApp/index.html' %}
+
+{% load static %}
+
+{% block codigoDinamico %}
+<form action="" method="get">
+
+    <input type="text" name="email" id="email" placeholder="buscar e-mail">
+
+    <input type="submit" value="Buscar">
+
+</form>
+
+{% if instructores %}
+
+    <ul>
+    {% for instructor in instructores %}
+        <li>Instructor {{instructor.nombre}} {{instructor.apellido}} con correo: {{instructor.email}} y profesion {{instructor.profesion}}</li>
+    {% endfor %}
+    </ul>
+
+{% else %}
+    <p>No hay datos</p>
+{% endif %}
+
+
+{% endblock  %}
